@@ -5,12 +5,8 @@ module.exports = {
     app: ['./run.js']
   },
   output: {
-    path: path.resolve(__dirname, './'),
-    publicPath: '/assets/',
+    path: `${__dirname}/public/js/`,
+    publicPath: '/js/',
     filename: 'bundle.js'
   },
-  devServer: {
-    contentBase: path.join(__dirname, './'),
-    port: 9000
-  }
 };
